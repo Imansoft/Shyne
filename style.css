@@ -1,0 +1,51 @@
+/* Shared custom styles for Shyne */
+html, body {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f6ff;
+}
+
+/* Consistent container width */
+.container {
+  max-width: 1200px;
+}
+
+/* Navbar shadow and sticky */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/* Responsive tweaks for forms and cards */
+form input, form select, form textarea {
+  transition: box-shadow 0.2s;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  h1, h2, h3 {
+    font-size: 1.25rem;
+  }
+  .p-8, .p-6, .p-5 {
+    padding: 1rem !important;
+  }
+}
+
+/* Button focus for accessibility */
+button:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}

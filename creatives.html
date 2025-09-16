@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shyne - Talent Directory</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">Shyne</a>
+      <div class="space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+        <a href="creatives.html" class="text-gray-700 hover:text-blue-600 font-medium">Creatives</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Talent Directory Section -->
+  <section class="py-12 bg-blue-50 min-h-screen">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-6 text-blue-700 text-center">Talent Directory</h2>
+      <!-- Search and Filters -->
+      <div class="flex flex-col md:flex-row gap-4 mb-8 justify-center">
+        <input id="searchName" type="text" placeholder="Search by name..." class="w-full md:w-64 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <select id="filterCategory" class="w-full md:w-48 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+          <option value="">All Categories</option>
+          <option>Photographer</option>
+          <option>Designer</option>
+          <option>Videographer</option>
+          <option>Writer</option>
+          <option>Stylist</option>
+          <option>Artisan</option>
+          <option>Other</option>
+        </select>
+        <input id="filterLocation" type="text" placeholder="Filter by location..." class="w-full md:w-48 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+      </div>
+      <!-- Grid of Creative Cards -->
+      <div id="creativesGrid" class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"></div>
+
+      <!-- Contact Modal -->
+      <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-lg p-6 w-full max-w-md relative">
+          <button id="closeContactModal" class="absolute top-2 right-2 text-gray-400 hover:text-blue-600 text-2xl">&times;</button>
+          <h3 class="text-xl font-bold mb-4 text-blue-700">Contact Creative</h3>
+          <form id="contactForm" class="space-y-4">
+            <input type="hidden" id="contactCreativeName" name="creativeName">
+            <div>
+              <label class="block text-gray-700 font-medium mb-1" for="contactName">Your Name</label>
+              <input type="text" id="contactName" name="name" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            </div>
+            <div>
+              <label class="block text-gray-700 font-medium mb-1" for="contactEmail">Your Email</label>
+              <input type="email" id="contactEmail" name="email" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            </div>
+            <div>
+              <label class="block text-gray-700 font-medium mb-1" for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" rows="3" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 rounded hover:bg-blue-700 transition">Send Message</button>
+            <div id="contactSuccess" class="hidden text-green-600 text-center font-medium mt-2">Message sent successfully!</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

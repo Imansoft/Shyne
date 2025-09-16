@@ -1,0 +1,35 @@
+🔹 Step 1: Project Setup
+Prompt to Copilot:
+Create a simple responsive web app structure using vanilla HTML, CSS (Tailwind via CDN), and JavaScript. The app should have pages: index.html (landing), creatives.html (talent directory), profile.html (creative profile), admin.html (admin dashboard). Include a shared style.css and script.js.
+
+🔹 Step 2: Landing Page
+Prompt:
+Generate index.html with a hero section (platform intro), call-to-action buttons ("Browse Creatives", "Join as Creative"). Use Tailwind classes for styling. Add a simple navbar with links to Home, Creatives, and Admin.
+
+🔹 Step 3: Creative Sign-Up Form
+Prompt:
+In profile.html, create a "Sign Up as Creative" form with fields: Name, Category (dropdown: Photographer, Designer, etc.), Skills (textarea), Location, and Portfolio (file upload for images). Use Tailwind for styling. On form submit, just save data in a local JavaScript object (no real backend yet).
+
+🔹 Step 4: Display Portfolio
+Prompt:
+Add JavaScript in script.js to handle form submission on profile.html. Store user profile data in a global array (mock database). Display a simple portfolio card with uploaded images preview and profile details below the form.
+
+🔹 Step 5: Talent Directory
+Prompt:
+In creatives.html, create a grid of creative profiles (cards) populated from the global JavaScript array. Each card should show Name, Category, Location, and a thumbnail from portfolio. Include a search bar with filters (by category, location). Use Tailwind cards layout.
+
+🔹 Step 6: Contact a Creative
+Prompt:
+On each creative card in creatives.html, add a "Contact" button. When clicked, show a modal with a contact form (Name, Email, Message). On submit, just log the message in console (mock email). Display a success message on screen.
+
+🔹 Step 7: Admin Dashboard
+Prompt:
+In admin.html, create a table that lists all creatives from the global array. Each row should show Name, Category, and Status (Approved/Pending). Add "Approve" and "Remove" buttons that update the status or remove from the array. No real backend, just rule-based actions.
+
+🔹 Step 8: Minimal Styling
+Prompt:
+Use TailwindCSS for all styling. Add simple consistent colors and spacing. Ensure pages are mobile-friendly. Don’t over-engineer the design — just make it clean and readable.
+
+🔹 Step 9: Mock Data
+Prompt:
+Preload the app with a few hardcoded creative profiles and sample portfolio images (from Unsplash or placeholders). This will make the prototype look realistic.

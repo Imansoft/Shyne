@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shyne - Creative Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">Shyne</a>
+      <div class="space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+        <a href="creatives.html" class="text-gray-700 hover:text-blue-600 font-medium">Creatives</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sign Up as Creative Form -->
+  <section class="py-12 bg-blue-50 min-h-screen">
+    <div class="max-w-xl mx-auto bg-white rounded-lg shadow p-8">
+      <h2 class="text-2xl font-bold mb-6 text-center text-blue-700">Sign Up as Creative</h2>
+      <form id="creativeSignUpForm" class="space-y-5" enctype="multipart/form-data">
+        <div>
+          <label class="block text-gray-700 font-medium mb-1" for="name">Name</label>
+          <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-1" for="category">Category</label>
+          <select id="category" name="category" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <option value="">Select Category</option>
+            <option>Photographer</option>
+            <option>Designer</option>
+            <option>Videographer</option>
+            <option>Writer</option>
+            <option>Stylist</option>
+            <option>Artisan</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-1" for="skills">Skills</label>
+          <textarea id="skills" name="skills" rows="3" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Describe your skills..."></textarea>
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-1" for="location">Location</label>
+          <input type="text" id="location" name="location" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-1" for="portfolio">Portfolio (Upload Images)</label>
+          <input type="file" id="portfolio" name="portfolio" accept="image/*" multiple class="w-full border border-gray-300 rounded px-3 py-2">
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 rounded hover:bg-blue-700 transition">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

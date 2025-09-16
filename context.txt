@@ -1,0 +1,49 @@
+Shyne PRD (Product Requirements Document)
+Product Name
+Shyne
+Brand
+Karatek Solutions
+Version
+1.0 (MVP)
+Prepared by
+Godwin Okechukwu
+Purpose
+Shyne is a digital platform that solves the problem of low visibility, limited opportunities, and weak
+industry connections faced by creatives in Ilorin. The platform connects local talents
+(photographers, designers, videographers, writers, stylists, artisans, etc.) with agents,
+organizations, and clients, enabling them to showcase their work, get discovered, and land
+opportunities.
+Target Users
+Primary: Creatives (photographers, writers, designers, videographers, stylists, artisans),
+Agents/Clients (event planners, businesses, NGOs, individuals).
+Secondary: Administrators (manage platform, approve/remove users, monitor activity).
+User Problems & Solutions
+Problem: Creatives lack visibility → Solution: Profiles with portfolios, searchable by category, skills,
+or location.
+Problem: Few opportunities → Solution: Agents can directly contact or post gigs.
+Problem: Weak industry connections → Solution: Built-in talent directory + contact features.
+Problem: Income instability → Solution: Consistent flow of opportunities & exposure.
+Core Features (MVP)
+A. Creative Profiles: Sign up, profile fields, upload portfolio.
+B. Talent Directory: Browse creatives, search filters, profile cards.
+C. Opportunity Connection: Contact button, message form, email notifications.
+D. Admin Dashboard: Approve/manage profiles.
+Non-Core Features (Future)
+Ratings & Reviews, Direct payment integration, Analytics, In-app messaging, Premium
+subscriptions.
+User Flows (MVP)
+Creative: Sign up → Create profile → Upload samples → Profile live → Get contacted.
+Agent: Visit → Browse/search → Filter → View profile → Contact talent.
+
+Technical Requirements
+Platform: Web app (responsive).
+Frontend: Vanilla HTML/JS.
+Styling: TailwindCSS.
+Database: Supabase(storage)
+Auth: rule-based (pre-coded)
+Hosting: Vercel/Netlify 
+
+Risks & Assumptions
+Risk: Poor portfolios → Solution: Guides during onboarding.
+Risk: Trust issues → Solution: Verified badge (future).
+Assumption: Talents will join if visibility benefits are clear.
